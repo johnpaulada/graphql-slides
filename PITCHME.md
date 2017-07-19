@@ -1,7 +1,7 @@
-![Logo](./images/gql-logo-320.png)
+![Logo](./images/gql-logo-256.png)
 
-### GraphQL
+## GraphQL
 ##### A Practical Introduction
 ---
-## GraphQL
+# GraphQL
 <span style="color: #444">is a new API standard that provides a more efficient, powerful and flexible alternative to REST</span>
