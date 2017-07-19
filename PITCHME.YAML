@@ -1,2 +1,3 @@
 theme : moon
 logo : images/gql-logo-256.png
+transition : zoom
