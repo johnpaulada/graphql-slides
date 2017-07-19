@@ -1,3 +1,5 @@
+---?image=images/bg-code.jpg&size=cover
+
 ![Logo](./images/gql-logo-256.png)
 
 ## GraphQL
