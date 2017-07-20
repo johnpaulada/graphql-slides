@@ -7,15 +7,15 @@
 
 ---
 # GraphQL
-<span style="color: #444">is a new API standard that provides a more efficient, powerful and flexible alternative to REST</span>
+<span style="color: #777">is a new API standard that provides a more efficient, powerful and flexible alternative to REST</span>
 
 ---
 # API
-<span style="color: #444">is an interface that allows you to use an application.</span>
+<span style="color: #777">is an interface that allows you to use an application.</span>
 
 +++
 # REST
-<span style="color: #444">is way of structuring a Web API.</span>
+<span style="color: #777">is way of structuring a Web API.</span>
 
 +++
 ### Star Wars REST Example
