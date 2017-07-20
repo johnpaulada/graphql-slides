@@ -14,7 +14,7 @@
 <span style="color: #777">*a query language for APIs - not databases.*</span>
 
 ---
-# Practical Definition of Terms
+### Practical Definition of Terms
 
 +++
 # API
