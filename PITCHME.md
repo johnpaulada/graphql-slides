@@ -75,6 +75,7 @@ Response:
   "edited": "2014-12-20T21:17:56.891000Z",
   "url": "http://swapi.co/api/people/1/"
 }
+```
 
 @[1-2]
 @[4]
