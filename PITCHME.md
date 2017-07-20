@@ -95,13 +95,13 @@ Response:
 - Easy to use |
 
 +++
-### GraphQL is **EFFICIENT**
-<p class="fragment" style="color: #777">GraphQL allows the API consumers to just get what they need, which makes it more efficient than REST when mobile data is limited and/or the connectivity is weak.</p>
+### GraphQL is EFFICIENT
+<span class="fragment" style="color: #777">GraphQL allows the API consumers to just get what they need, which makes it more efficient than REST when mobile data is limited and/or the connectivity is weak.</span>
 
 +++
-### GraphQL is **FLEXIBLE**
-<p class="fragment" style="color: #777">Because GraphQL allows API consumers to just get the data they need, it can be used by any client, no matter what the framework or platform.</p>
+### GraphQL is FLEXIBLE
+<span class="fragment" style="color: #777">Because GraphQL allows API consumers to just get the data they need, it can be used by any client, no matter what the framework or platform.</span>
 
 +++
-### GraphQL is **EASY TO USE**
-<p class="fragment" style="color: #777">With changes in API specifications, REST APIs might need to change drastically, too. GraphQL allows faster modification and creates a predictable API allowing for rapid development.</p>
+### GraphQL is EASY TO USE
+<span class="fragment" style="color: #777">With changes in API specifications, *REST* APIs might need to change drastically, too. **GraphQL** allows faster modification and creates a predictable API allowing for rapid development.</span>
