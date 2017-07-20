@@ -52,13 +52,13 @@ Response:
 	}]
 }
 ```
-@[1-2]
-@[4]
-@[6]
-@[7]
-@[8]
-@[9]
-@[10-21]
+@[1-2](Send GET request to /people endpoint)
+@[4](Response)
+@[6](Number of responses)
+@[7](Link to next results)
+@[8](Link to previous results)
+@[9](Array of results)
+@[10-21](Fields of a result)
 
 +++
 ### Star Wars REST Example
@@ -84,9 +84,9 @@ Response:
 }
 ```
 
-@[1-2]
-@[4]
-@[6-17]
+@[1-2](Send GET request to /people/1 endpoint)
+@[4](Response)
+@[6-17](Fields of a result)
 
 ---
 ### A Better Alternative to REST
@@ -134,9 +134,9 @@ type Post {
   author: Person!
 }
 ```
-@[1]
-@[2]
-@[3]
+@[1](Post Type)
+@[2](title field of type String -- required)
+@[3](author field of type Person -- required)
 
 +++
 ##### Person Type (with posts field)
@@ -147,7 +147,77 @@ type Person {
   posts: [Post!]!
 }
 ```
-@[1]
-@[2]
-@[3]
-@[4]
+@[1](Person Type)
+@[2](name field of type String -- required)
+@[3](age field of type Int -- required)
+@[4](posts field of type List of Posts -- required)
+
+---
+#### Queries
+
++++
+##### All Persons Query
+```
+{
+  allPersons {
+    name
+  }
+}
+```
+@[2](allPersons root field)
+@[3](name field)
+
++++
+##### All Persons Query Response
+```
+{
+  "data": {
+    "allPersons": [
+      { "name": "Johnny" },
+      { "name": "Sarah" },
+      { "name": "Alice" }
+    ]
+  }
+}
+```
+Notice that only the name field was retrieved. This is because that's the only thing we requested. No over-fetching.
+
++++
+##### All Persons with arguments Query
+```
+{
+  allPersons(last: 2) {
+    name
+  }
+}
+```
+@[2](allPersons root field with the parameter `last` given a value of 2)
+@[3](name field)
+
+##### All Persons with arguments Response
+```
+{
+  "data": {
+    "allPersons": [
+      {
+        "name": "Alice"
+      },
+      {
+        "name": "Alice"
+      }
+    ]
+  }
+}
+```
+
+---
+#### GraphiQL
+[GraphQL Playground](https://api.graph.cool/simple/v1/cj595h7fgm2cr0105x9rjef48/?query=%7B%0A%20%20allPersons%20%7B%0A%20%20%20%20name%0A%20%20%7D%0A%7D)
+- Query
+- Nested Query
+- Query with arguments
+- Documentation
+- Mutation
+
+---
+#### Mutations
