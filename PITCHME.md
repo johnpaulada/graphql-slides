@@ -105,3 +105,9 @@ Response:
 +++
 ### GraphQL is EASY TO USE
 <span class="fragment" style="color: #777">With changes in API specifications, *REST* APIs might need to change drastically, too. **GraphQL** allows faster modification and creates a predictable API allowing for rapid development.</span>
+
+---
+## Data Fetching with REST vs GraphQL
+
+---
+### Schema Definition Language (SDL)
