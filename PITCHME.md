@@ -7,9 +7,16 @@
 
 ---
 # GraphQL
-<span style="color: #777">is a new API standard that provides a more efficient, powerful and flexible alternative to REST</span>
+<span style="color: #777">*is a new API standard that provides a more efficient, powerful and flexible alternative to REST*</span>
 
 ---
+# GraphQL
+<span style="color: #777">*a query language for APIs - not databases.*</span>
+
+---
+# Practical Definition of Terms
+
++++
 # API
 <span style="color: #777">is an interface that allows you to use an application.</span>
 
