@@ -91,5 +91,14 @@ Response:
 ---
 ### A Better Alternative to REST
 - Efficient
-- Flexible |
-- Fast     |
+- Flexible    |
+- Easy to use |
+
++++
+### GraphQL is **EFFICIENT**
+
++++
+### GraphQL is **FLEXIBLE**
+
++++
+### GraphQL is **EASY TO USE**
