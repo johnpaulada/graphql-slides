@@ -87,3 +87,9 @@ Response:
 @[1-2]
 @[4]
 @[6-17]
+
+---
+#### A Better Alternative to REST
+1. Efficient |
+2. Flexible |
+3. Fast |
