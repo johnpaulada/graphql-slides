@@ -113,3 +113,41 @@ Response:
 ### Schema Definition Language (SDL)
 - Types and Fields      |
 - Queries and Mutations |
+
++++
+##### Person Type
+```
+type Person {
+  name: String!
+  age: Int!
+}
+```
+@[1](Person Type)
+@[2](name field of type String -- required)
+@[3](age field of type Int -- required)
+
++++
+##### Post Type
+```
+type Post {
+  title: String!
+  author: Person!
+}
+```
+@[1]
+@[2]
+@[3]
+
++++
+##### Person Type (with posts field)
+```
+type Person {
+  name: String!
+  age: Int!
+  posts: [Post!]!
+}
+```
+@[1]
+@[2]
+@[3]
+@[4]
