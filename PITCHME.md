@@ -153,7 +153,7 @@ type Person {
 @[4](posts field of type List of Posts -- required)
 
 ---
-#### Queries
+## Queries
 
 +++
 ##### All Persons Query
@@ -194,6 +194,7 @@ Notice that only the name field was retrieved. This is because that's the only t
 @[2](allPersons root field with the parameter `last` given a value of 2)
 @[3](name field)
 
++++
 ##### All Persons with arguments Response
 ```
 {
@@ -211,7 +212,7 @@ Notice that only the name field was retrieved. This is because that's the only t
 ```
 
 ---
-#### GraphiQL
+## GraphiQL
 [GraphQL Playground](https://api.graph.cool/simple/v1/cj595h7fgm2cr0105x9rjef48/?query=%7B%0A%20%20allPersons%20%7B%0A%20%20%20%20name%0A%20%20%7D%0A%7D)
 - Query
 - Nested Query
@@ -220,4 +221,4 @@ Notice that only the name field was retrieved. This is because that's the only t
 - Mutation
 
 ---
-#### Mutations
+## Mutations
