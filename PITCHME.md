@@ -122,9 +122,9 @@ type Person {
   age: Int!
 }
 ```
-@[1](Person Type)
-@[2](name field of type String -- required)
-@[3](age field of type Int -- required)
+@[1](`Person` type)
+@[2](`name` field of type `String` -- required)
+@[3](`age` field of type `Int` -- required)
 
 +++
 ##### Post Type
@@ -134,9 +134,9 @@ type Post {
   author: Person!
 }
 ```
-@[1](Post Type)
-@[2](title field of type String -- required)
-@[3](author field of type Person -- required)
+@[1](`Post` type)
+@[2](`title` field of type `String` -- required)
+@[3](`author` field of type `Person` -- required)
 
 +++
 ##### Person Type (with posts field)
@@ -147,10 +147,10 @@ type Person {
   posts: [Post!]!
 }
 ```
-@[1](Person Type)
-@[2](name field of type String -- required)
-@[3](age field of type Int -- required)
-@[4](posts field of type List of Posts -- required)
+@[1](`Person` type)
+@[2](`name` field of type `String` -- required)
+@[3](`age` field of type `Int` -- required)
+@[4](`posts` field of type `List` of `Posts` -- required)
 
 ---
 ## Queries
@@ -164,8 +164,8 @@ type Person {
   }
 }
 ```
-@[2](allPersons root field)
-@[3](name field)
+@[2](`allPersons` root field)
+@[3](`name` field)
 
 +++
 ##### All Persons Query Response
@@ -180,7 +180,9 @@ type Person {
   }
 }
 ```
-Notice that only the name field was retrieved. This is because that's the only thing we requested. No over-fetching.
+Notice that only the name field was retrieved. This is because that's the only thing we requested.
+
+No over-fetching.
 
 +++
 ##### All Persons with arguments Query
@@ -191,8 +193,8 @@ Notice that only the name field was retrieved. This is because that's the only t
   }
 }
 ```
-@[2](allPersons root field with the parameter `last` given a value of 2)
-@[3](name field)
+@[2](`allPersons` root field with the parameter `last` given a value of 2)
+@[3](`name` field)
 
 +++
 ##### All Persons with arguments Response
