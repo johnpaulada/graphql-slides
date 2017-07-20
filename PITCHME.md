@@ -111,3 +111,5 @@ Response:
 
 ---
 ### Schema Definition Language (SDL)
+- Types and Fields      |
+- Queries and Mutations |
