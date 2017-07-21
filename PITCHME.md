@@ -390,4 +390,11 @@ type Post {
 ## GraphQL and React
 
 ---
-## Questions?
+# Questions?
+
+---
+# Resource
+[https://www.howtographql.com](https://www.howtographql.com)
+
+---
+# Thank You!
