@@ -363,14 +363,16 @@ type Post {
 @[5-7](Mutations)
 @[9-11](Subscriptions)
 @[13-17](Person type definition)
-@[15-18](Post type definition)
+@[19-22](Post type definition)
 
 ---
 ### GraphQL Architectures
-- <span class="fragment">GraphQL server with a connected database</span>
-- <span class="fragment">GraphQL server that is a thin layer in front of a number of third party or legacy systems and integrates them through a single GraphQL API</span>
-- <span class="fragment">A hybrid approach of a connected database and third party or legacy systems that can all be accessed through the same GraphQL API</span>
+<ul>
+  <li class="fragment">GraphQL server with a connected database</li>
+  <li class="fragment">GraphQL server that is a thin layer in front of a number of third party or legacy systems and integrates them through a single GraphQL API</li>
+  <li class="fragment">A hybrid approach of a connected database and third party or legacy systems that can all be accessed through the same GraphQL API</li>
+</ul>
 
 +++
-### How do we accomplish this?
-#### <span class="fragment">Resolvers</span>
+## How do we accomplish this?
+### <span class="fragment">Resolvers</span>
