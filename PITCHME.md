@@ -26,6 +26,7 @@
 
 +++
 ### Star Wars REST Example
+[Star Wars API](https://swapi.co/)
 
 ```
 Request:
@@ -87,6 +88,10 @@ Response:
 @[1-2](Send GET request to /people/1 endpoint)
 @[4](Response)
 @[6-17](Fields of a result)
+
++++
+### Star Wars GraphQL
+[Star Wars GraphQL API](http://graphql.org/swapi-graphql/)
 
 ---
 ### A Better Alternative to REST
@@ -224,3 +229,148 @@ No over-fetching.
 
 ---
 ## Mutations
+
++++
+### Add a Person
+
+```
+mutation {
+  createPerson(name: "Alice", age: 36) {
+    id
+  }
+}
+```
+@[1](Mutation keyword marks the beginning of a mutation)
+@[2](createPerson field with arguments)
+@[3](A mutation also returns a value)
+
++++
+### Person creation response
+
+```
+{
+  "data": {
+    "createPerson": {
+      "id": "cj5d628yy2ybz0117o17av7vg"
+    }
+  }
+}
+```
+
+---
+## Subscriptions
+
++++
+### Subscribe to "Person Created" event
+
+```
+subscription {
+  newPerson {
+    name
+    age
+  }
+}
+```
+@[1](`subscription` keyword marks the beginning of a subscription)
+@[2](newPerson subscription field)
+@[3-4](Value returned when a person is created)
+
++++
+### Person creation subscription data
+
+```
+{
+  "newPerson": {
+    "name": "Jane",
+    "age": 23
+  }
+}
+```
+
+---
+## Defining the Schema
+
++++
+### Define Queries
+
+```
+type Query {
+  allPersons: [Person!]!
+}
+```
+@[1](Define queries here)
+@[2](Defines the allPersons query)
+
++++
+### Define Queries with parameters
+
+```
+type Query {
+  allPersons(last: Int): [Person!]!
+}
+```
+@[2](Notice the `*last: Int*` parameter)
+
++++
+### Define Mutations
+
+```
+type Mutation {
+  createPerson(name: String!, age: String!): Person!
+}
+```
+@[1](Define mutations here)
+@[2](Defines the createPerson mutation)
+
++++
+### Define Subscriptions
+
+```
+type Subscription {
+  newPerson: Person!
+}
+```
+@[1](Define subscriptions here)
+@[2](Defines the newPerson subscription)
+
++++
+### Full Schema
+```
+type Query {
+  allPersons(last: Int): [Person!]!
+}
+
+type Mutation {
+  createPerson(name: String!, age: String!): Person!
+}
+
+type Subscription {
+  newPerson: Person!
+}
+
+type Person {
+  name: String!
+  age: Int!
+  posts: [Post!]!
+}
+
+type Post {
+  title: String!
+  author: Person!
+}
+```
+@[1-3](Queries)
+@[5-7](Mutations)
+@[9-11](Subscriptions)
+@[13-17](Person type definition)
+@[15-18](Post type definition)
+
+---
+### GraphQL Architectures
+- <span class="fragment">GraphQL server with a connected database</span>
+- <span class="fragment">GraphQL server that is a thin layer in front of a number of third party or legacy systems and integrates them through a single GraphQL API</span>
+- <span class="fragment">A hybrid approach of a connected database and third party or legacy systems that can all be accessed through the same GraphQL API</span>
+
++++
+### How do we accomplish this?
+#### <span class="fragment">Resolvers</span>
