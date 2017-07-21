@@ -98,6 +98,7 @@ Response:
 - Efficient   |
 - Flexible    |
 - Easy to use |
+- Declarative |
 
 +++
 ### GraphQL is EFFICIENT
@@ -110,6 +111,10 @@ Response:
 +++
 ### GraphQL is EASY TO USE
 <span class="fragment" style="color: #777">With changes in API specifications, *REST* APIs might need to change drastically, too. **GraphQL** allows faster modification and creates a predictable API allowing for rapid development.</span>
+
++++
+### GraphQL is DECLARATIVE
+<span class="fragment" style="color: #777">Just define what you need and you're good to go.</span>
 
 ---
 ## Data Fetching with REST vs GraphQL
@@ -221,11 +226,11 @@ No over-fetching.
 ---
 ## GraphiQL
 [GraphQL Playground](https://api.graph.cool/simple/v1/cj595h7fgm2cr0105x9rjef48/?query=%7B%0A%20%20allPersons%20%7B%0A%20%20%20%20name%0A%20%20%7D%0A%7D)
-- Query
-- Nested Query
-- Query with arguments
-- Documentation
-- Mutation
+- Query                |
+- Nested Query         |
+- Query with arguments |
+- Documentation        |
+- Mutation             |
 
 ---
 ## Mutations
@@ -309,7 +314,7 @@ type Query {
   allPersons(last: Int): [Person!]!
 }
 ```
-@[2](Notice the `*last: Int*` parameter)
+@[2](Notice the `last: Int` parameter)
 
 +++
 ### Define Mutations
@@ -374,5 +379,15 @@ type Post {
 </ul>
 
 +++
-## How do we accomplish this?
-### <span class="fragment">Resolvers</span>
+#### How do we accomplish this?
+## <span class="fragment">Resolvers</span>
+
++++
+### A Resolver corresponds to a Field
+<span style="color: #777">A resolver gets information for a field from a single source or multiple sources.</span>
+
+---
+## GraphQL and React
+
+---
+## Questions?
