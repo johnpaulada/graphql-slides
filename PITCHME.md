@@ -390,6 +390,18 @@ type Post {
 ## GraphQL and React
 
 ---
+## Interactive Example
+#### Anime API
+
++++
+### Diagram
+<a href="https://ibb.co/cDEhEF"><img src="https://preview.ibb.co/koTW8a/Graph_QL_Schema_Design.png" alt="Graph_QL_Schema_Design" border="0"></a>
+
++++
+### Schema and Playground
+[GraphCool Console](https://console.graph.cool/Anime%20API/schema)
+
+---
 # Questions?
 
 ---
